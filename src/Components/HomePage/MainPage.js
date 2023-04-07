@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./MainPage.css";
 
 class MainPage extends Component {
     constructor(props) {
@@ -7,8 +8,8 @@ class MainPage extends Component {
     state = {  }
     render() { 
         return (
-            <div>
-                Main Page
+            <div className='mainpage'>
+                
             </div>
           );
     }
