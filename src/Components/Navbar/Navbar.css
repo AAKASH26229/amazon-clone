@@ -1,0 +1,124 @@
+.navbar_component {
+    width: 100vw;
+    height: 60px;
+    background-color: #131a22;
+    display: flex;
+}
+
+.navbar_logo {
+    background: url('https://ik.imagekit.io/amazon26/amazon-image/sprite.png?updatedAt=1680608527554') no-repeat -20px -180px;
+	width: 152px;
+	height: 46px;
+    margin: 10px;
+}
+
+.navbar_locator{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.navbar_location {
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navabar_locatorImage{
+    background: url('https://ik.imagekit.io/amazon26/amazon-image/sprite.png?updatedAt=1680608527554') no-repeat -142px -758px;
+	width: 29px;
+	height: 33px;
+    margin-top: -7px;
+}
+
+.navbar_searchcomponent {
+    display: flex;
+}
+
+.navbar_searchboxdiv {
+    background-color: #FEBE68;
+    width: 40px;
+    border-radius: 0px 5px 5px 0px;
+    height: 36px;
+    margin: 1px;
+    margin-top: 8px;
+}
+
+.navbar_searchbox {
+    width: 640px;
+    height: 30px;
+    margin-top: 8px
+}
+
+.navbar_searchicon {
+    background : url('https://ik.imagekit.io/amazon26/amazon-image/sprite.png?updatedAt=1680608527554') no-repeat -20px -580px;
+	width: 40px;
+    height: 35px;
+    margin: 1px;
+}
+
+
+.navbar_dropdown {
+    margin-top: 8px;
+    width: 65px;
+    height: 35px;
+    background-color: #e6e5e5;
+    border-radius: 5px 0px 0px 5px;
+    text-align: center;
+}
+
+.navbar_signin {
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 23px;
+}
+
+.navbar_return {
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.navbar_cart {
+    display: flex;
+    margin-top: 8px;
+}
+
+.navbar_text {
+    color: white;
+    
+}
+
+.cart_image {
+    background: url('https://ik.imagekit.io/amazon26/amazon-image/sprite.png?updatedAt=1680608527554') no-repeat -20px -680px;
+	width: 76px;
+	height: 52px;
+    margin-left: 3px;
+
+}
+.navbar_text_cart {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.cart_item {
+    font-weight: bold;
+    position: relative;
+    left: -35px;
+    margin-top: 10px;
+    color: #f88805;
+}
+
+.navbar_footer {
+    width: 100vw;
+    height: 30px;
+    background-color: #22303E;
+    color: white;
+    display: flex;
+}
+
+.navbar_footer_text {
+    margin: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
