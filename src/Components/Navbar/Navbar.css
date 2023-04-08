@@ -37,10 +37,10 @@
 
 .navbar_searchboxdiv {
     background-color: #FEBE68;
-    width: 40px;
+    width: 44px;
     border-radius: 0px 5px 5px 0px;
-    height: 36px;
-    margin: 1px;
+    height: 35px;
+    margin: 0px;
     margin-top: 8px;
 }
 
@@ -52,8 +52,8 @@
 
 .navbar_searchicon {
     background : url('https://ik.imagekit.io/amazon26/amazon-image/sprite.png?updatedAt=1680608527554') no-repeat -20px -580px;
-	width: 40px;
-    height: 35px;
+	width: 43px;
+    height: 34px;
     margin: 1px;
 }
 
