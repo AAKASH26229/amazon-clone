@@ -18,8 +18,11 @@
 }
 
 .LongAdvertisment_footer {
-    padding: 5px;
-    display: flex;
-    padding-left : "166px";
+    
+   margin-left: 130px;
 
+ }
+
+ .LongAdvertisment_footermain{
+    display: flex;
  }
