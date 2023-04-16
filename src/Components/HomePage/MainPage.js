@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./MainPage.css";
 import AdvertismentOne from './AdvertismentOne/AdvertismentOne';
 import AdvertismentFour from './AdvertismentFour/AdvertismentFour';
+import LongAdvertisment from './LongAdvertisment/LongAdvertisment';
 
 class MainPage extends Component {
     constructor(props) {
@@ -20,6 +21,8 @@ class MainPage extends Component {
                     <AdvertismentFour/>
                     <AdvertismentFour/>
                     <AdvertismentOne/>
+                    <br/>
+                    <LongAdvertisment/>
 
                 </div>
             </div>

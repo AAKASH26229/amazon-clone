@@ -1,0 +1,25 @@
+.LongAdvertisment_main{
+    width: 100vw;
+    height:300px;
+    background-color: white;
+    margin: 10px
+}
+
+.LongAdvertisment_head {
+    font-size: 21px;
+    line-height: 27px;
+    padding: 15px;
+}
+
+.LongAdvertisment_body {
+    min-width: 320px;
+    display: flex;
+    padding-left: 15px;
+}
+
+.LongAdvertisment_footer {
+    padding: 5px;
+    display: flex;
+    padding-left : "166px";
+
+ }
