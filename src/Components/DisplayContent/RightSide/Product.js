@@ -2,6 +2,8 @@ import React from 'react';
 import "./RightSide.css";
 import Rating from '@mui/material/Rating';
 
+import currencySymbol from 'currency-symbol';
+
 function Product(props) {
     return (
         <div className='product'>
@@ -17,11 +19,14 @@ function Product(props) {
                  <div>{props.definition.rating}</div> 
             </div>
             <div className='Product_price'>
-               <p style={{display: "flex"}}> {props.definition.price} <del style={{color : "grey", fontSize: "14px", padding: "6px"}}>&#8377;{props.definition.oprice}</del> <div style={{color : "black", fontSize: "14px", padding: "6px"}}>Save &#8377;{props.definition.save}</div></p>
+               <p style={{display: "flex"}}> &#8377;{props.definition.price} <del style={{color : "grey", fontSize: "14px", padding: "6px"}}>&#8377;{props.definition.oprice}</del><div style={{color : "black", fontSize: "14px", padding: "6px"}}>Save &#8377;{props.definition.save}</div></p>
             </div>          
             <div style={{marginTop: "-25px"}}>
                 Save extra with No Cost EMI 
             </div> 
+            <div>
+            <span style={{color:"blue",fontWeight:"bold"}}><span style={{color:"golden",fontWeight:"bold"}}>&#10003;</span>prime</span> <span style={{fontSize:"14px"}}>Get it by </span><span  style={{fontWeight:"bold", fontSize:"14px"}}>{props.definition.prime}</span>
+            </div>
             <div style={{color:"darkgreen", fontSize:"15px", marginTop:"2px"}}>
                 FREE Delivery by Amazon
             </div>
