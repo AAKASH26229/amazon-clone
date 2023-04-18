@@ -70,13 +70,14 @@
 .navbar_signin {
     width: 120px;
     margin-top: 10px;
-    margin-left: 23px;
+    margin-left: 55px;
+
 }
 
 .navbar_return {
     width: 120px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 25px;
 }
 
 .navbar_cart {

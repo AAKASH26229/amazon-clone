@@ -18,7 +18,7 @@ function LeftSide(props) {
                     <input type="checkbox" value={"MI"}/>MI
                 </label>
                 <label className="brandname">
-                    <input type="checkbox" value={"Nokia"}/>Nokia
+                    <input type="checkbox" value={"Oneplus"}/>OnePlus
                 </label>
                 <label className="brandname">
                     <input type="checkbox" value={"Lenevo"}/>Lenevo
