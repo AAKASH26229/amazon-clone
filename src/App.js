@@ -5,16 +5,28 @@ import MainPage from './Components/HomePage/MainPage';
 import DisplayContent from './Components/DisplayContent/DisplayContent';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 import Checkout from './Components/Checkout/Checkout';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      {/* <DisplayContent/> */}
-       {/* <MainPage />  */}
-       {/* <PlaceOrder /> */}
-       <Checkout />
-    </div>
+  return ( 
+    <Router>
+      <div className="App">
+        <Navbar />
+
+        <Routes>  
+          <Route path="" element={<MainPage />} />
+            
+
+          <Route path="/display" element={<DisplayContent />} />
+
+          <Route path="/order/:id" element={<PlaceOrder />} />
+          
+          <Route path="/checkout" element={<Checkout />}/>
+            
+        </Routes>
+
+      </div>
+    </Router>
   );
 }
 

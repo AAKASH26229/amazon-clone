@@ -3,6 +3,7 @@ import "./PlaceOrder.css";
 import Grid from "@mui/material/Grid";
 import Rating from '@mui/material/Rating';
 import Paper from '@mui/material/Paper';
+import { Link } from 'react-router-dom';
 
 
 function PlaceOrder(props) {
@@ -54,8 +55,21 @@ function PlaceOrder(props) {
                 </Grid>
                 <Grid item xs={3}>
                     <Paper variant='outlined' className='placeorder_order'>
-                        <button className='placeorder_button addtocart'>Add to Cart</button>
-                        <button className='placeorder_button buynow'>Buy Now</button>
+                        <div>
+                            <div>
+                                <div style={{fontWeight:"bold", marginTop:"20px", marginLeft:"30px"}}>Without Exchange</div>
+                                <div style={{ marginLeft:"30px"}}>&#8377;50,999</div>
+                                <div style={{fontWeight:"bold",  marginTop:"20px", marginLeft:"30px"}}>Add an Accessory</div>
+                                <div style={{ marginLeft:"30px"}}><input type='checkbox' />Apple Airpods</div>
+                                <div style={{ marginLeft:"30px"}}><input type='checkbox' />Apple 20W USB Power Adapter</div>
+                            </div>
+                            <div>
+                                <Link to={"/checkout"}>
+                                <button style={{marginTop:"20px", marginLeft:"20px"}} className='placeorder_button addtocart'>Add to Cart</button>
+                                </Link>
+                                <button style={{marginTop:"10px", marginLeft:"20px"}} className='placeorder_button buynow'>Buy Now</button>
+                            </div>    
+                        </div>
                     </Paper>
                 </Grid>
             </Grid>
