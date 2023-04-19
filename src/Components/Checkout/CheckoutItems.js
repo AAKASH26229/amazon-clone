@@ -12,6 +12,12 @@ function CheckoutItems(props) {
                     <div style={{fontSize:"20px"}} className='textgap'>New Apple iPhone 11 (64GB) - Green</div>
                     <div style={{fontWeight:"bold"}} className='textgap'>&#8377;50,999</div>
                     <div className='textgap'>In Stock</div>
+                    <div className='textgap'>Eligible for FREE Shipping</div>
+                    <div className='textgap'><input type='checkbox' />This will be a gift. <span style={{color:"blue"}}>Learn more</span></div>
+                    <div className='textgap'>Size name:<span> 64GB</span></div>
+                    <div className='textgap'><span >Colour:</span> Green</div>
+                    <div className='textgap'><span >Pattern name:</span> iPhone 11</div>
+                    
                 </div>
             </div>
         </div>

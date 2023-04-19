@@ -14,7 +14,7 @@ function PlaceOrder(props) {
                 </Grid>
                 <Grid item xs={4}>
                     <div className='placeorder_description'>
-                        <div style={{fontSize:"24px", lineHeight:"32px", fontWeight:500}}>New Apple iphone 11 (64GB) - Green</div>
+                        <div style={{fontSize:"24px", lineHeight:"32px", fontWeight:500}}>New Apple iPhone 11 (64GB) - Green</div>
                         <div>
                             <Rating name="read-only" value="4" readOnly style={{fontSize:"20px"}}/>
                             35,798 ratings | 1000+ answred questions
