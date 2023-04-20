@@ -192,7 +192,7 @@ function PlaceOrder(props) {
                                  Brand: "Apple"
                                 },
 
-                                { id: "3311", name :  "New Apple iPhone 11 (64GB) - Black", rating:"35,786", price:"50,900",review:"1000",
+                                { id: "3344", name :  "New Apple iPhone 11 (64GB) - Black", rating:"35,786", price:"50,900",review:"1000",
                             
                                 EMI:"2,401",
                                 delivery:"Wednesday, Aug 18",
@@ -209,7 +209,7 @@ function PlaceOrder(props) {
                                Brand: "Apple"
                             },
    
-                            { id: "3312", name :  "New Apple iPhone XR (128GB) - White", rating:"124", price:"47,999",review:"100",
+                            { id: "3345", name :  "New Apple iPhone XR (128GB) - White", rating:"124", price:"47,999",review:"100",
                                     EMI:"2,401",
                                     delivery:"Wednesday, Aug 18",
                                     status:"In Stock",
