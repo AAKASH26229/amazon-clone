@@ -14,7 +14,7 @@ function App() {
         <Navbar />
 
         <Routes>  
-          <Route path="" element={<MainPage />} />
+         
             
 
           <Route path="/display" element={<DisplayContent />} />
@@ -22,6 +22,8 @@ function App() {
           <Route path="/order/:id" element={<PlaceOrder />} />
           
           <Route path="/checkout" element={<Checkout />}/>
+
+          <Route path="" element={<MainPage />} />
             
         </Routes>
 

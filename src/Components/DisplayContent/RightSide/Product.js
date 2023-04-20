@@ -2,7 +2,6 @@ import React from 'react';
 import "./RightSide.css";
 import Rating from '@mui/material/Rating';
 
-import currencySymbol from 'currency-symbol';
 
 function Product(props) {
     return (
