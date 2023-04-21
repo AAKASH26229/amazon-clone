@@ -7,7 +7,7 @@ import CheckoutItems from './CheckoutItems';
 import { CartContext } from '../CartContext';
 
 function Checkout(props) {
-    const {item,size,increment} = useContext(CartContext);
+    const {item,size,increment,decrement} = useContext(CartContext);
 
     const cartValue = function() {
        let price=0;
@@ -37,7 +37,7 @@ function Checkout(props) {
                 </Grid>
                 <Grid item={2}>
                     <div style={{width:"270px", height:"200px",padding:"20px", marginTop:"25px", backgroundColor:"white"}}>
-                        <div style={{fontSize:"26px"}}>Subtotal ({size}): <strong>{ cartValue() }</strong></div>
+                        <div style={{fontSize:"26px"}}>Subtotal ({size} items): <strong>{ cartValue() }</strong></div>
                         <div style={{paddingTop:"25px"}}>
                             <button className='placeorder_button'>Proceed to Buy</button>
                         </div>

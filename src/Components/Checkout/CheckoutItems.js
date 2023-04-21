@@ -1,10 +1,19 @@
-import React from 'react';
+import React,{ useContext } from 'react';
 import "./Checkout.css";
+import { CartContext } from '../CartContext';
 
 function CheckoutItems(props) {
+
+    const {item,size,increment,decrement} = useContext(CartContext);
+   
+   
+    // const removefromCart = function() {
+    //     decrement(props);
+    // }
+
     return(
         <div>
-            <div style={{border:"1px solid #E7E7E7" , width:"95%" ,display:"flex", height:"250px", margin:"25px"}}>
+            <div style={{border:"1px solid #E7E7E7" , width:"95%" ,display:"flex", height:"280px", margin:"25px"}}>
                 <div style={{margin:"25px"}}>
                     <img height={"200px"} src={props.definition.image} />
                 </div>
@@ -17,7 +26,9 @@ function CheckoutItems(props) {
                     <div className='textgap'>Size name:<span> {props.definition.Sizename}</span></div>
                     <div className='textgap'><span >Colour:</span> {props.definition.Colour}</div>
                     <div className='textgap'><span >Pattern name:</span> {props.definition.ModelName}</div>
-                    
+                    <div>
+                        <button type='reset' style={{background:"#FFD712", color:"Black"} }>Remove from cart</button>
+                        </div>
                 </div>
             </div>
         </div>

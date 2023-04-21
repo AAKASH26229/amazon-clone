@@ -11,7 +11,7 @@ import { CartContext } from '../CartContext';
 function PlaceOrder(props) {
 
 
-    const {item,size,increment} = useContext(CartContext);
+    const {item,size,increment,decrement} = useContext(CartContext);
     const [productDetails, setProductDetails] = useState([]);
     // for getting particular id we are using useParam
 
