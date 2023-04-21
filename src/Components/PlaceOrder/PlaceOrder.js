@@ -11,11 +11,15 @@ import { CartContext } from '../CartContext';
 function PlaceOrder(props) {
 
 
-    const {item,size} = useContext(CartContext);
+    const {item,size,increment} = useContext(CartContext);
     const [productDetails, setProductDetails] = useState([]);
     // for getting particular id we are using useParam
 
     let { id } = useParams();
+
+    const addToCart = function() {
+        increment(productDetails);
+    }
 
    
 
@@ -136,7 +140,7 @@ function PlaceOrder(props) {
         let list = [
 
             {
-                id: "1133", name: "New Apple iPhone 11 (64GB) - Green", rating: "35,946", review: "1000", price: "50,900", EMI: "2,401",
+                id: "1133", name: "New Apple iPhone 11 (64GB) - Green", rating: "35,946", review: "1000", price: "50900", EMI: "2,401",
                 delivery: "Wednesday, Aug 18",
                 status: "In Stock",
                 Soldby: "Darshita Electronics and Fullfilled by Amazon.",
@@ -152,7 +156,7 @@ function PlaceOrder(props) {
             },
 
             {
-                id: "1134", name: "New Apple iPhone 12 (128GB) - Blue", rating: "5,786", price: "79,000", review: "1000",
+                id: "1134", name: "New Apple iPhone 12 (128GB) - Blue", rating: "5,786", price: "79000", review: "1000",
                 EMI: "2,401",
                 delivery: "Wednesday, Aug 18",
                 status: "In Stock",
@@ -169,7 +173,7 @@ function PlaceOrder(props) {
             },
 
             {
-                id: "2233", name: "New Apple iPhone 11 (64GB) - Black", rating: "35,786", price: "50,900", review: "1000",
+                id: "2233", name: "New Apple iPhone 11 (64GB) - Black", rating: "35,786", price: "50900", review: "1000",
                 EMI: "2,401",
                 delivery: "Wednesday, Aug 18",
                 status: "In Stock",
@@ -186,7 +190,7 @@ function PlaceOrder(props) {
             },
 
             {
-                id: "2234", name: "New Apple iPhone XR (128GB) - White", rating: "124", price: "47,999", review: "100",
+                id: "2234", name: "New Apple iPhone XR (128GB) - White", rating: "124", price: "47999", review: "100",
 
                 EMI: "2,401",
                 delivery: "Wednesday, Aug 18",
@@ -204,7 +208,7 @@ function PlaceOrder(props) {
             },
 
             {
-                id: "3344", name: "New Apple iPhone 11 (64GB) - Black", rating: "35,786", price: "50,900", review: "1000",
+                id: "3344", name: "New Apple iPhone 11 (64GB) - Black", rating: "35,786", price: "50900", review: "1000",
                 EMI: "2,401",
                 delivery: "Wednesday, Aug 18",
                 status: "In Stock",
@@ -221,7 +225,7 @@ function PlaceOrder(props) {
             },
 
             {
-                id: "3345", name: "New Apple iPhone XR (128GB) - White", rating: "124", price: "47,999", review: "100",
+                id: "3345", name: "New Apple iPhone XR (128GB) - White", rating: "124", price: "47999", review: "100",
                 EMI: "2,401",
                 delivery: "Wednesday, Aug 18",
                 status: "In Stock",
@@ -305,10 +309,12 @@ function PlaceOrder(props) {
                                 <div style={{ marginLeft: "30px" }}><input type='checkbox' />Apple 20W USB Power Adapter</div>
                             </div>
                             <div>
+                                
+                                <button style={{ marginTop: "20px", marginLeft: "20px" }} className='placeorder_button addtocart' onClick={addToCart}>Add to Cart</button>
+                               
                                 <Link to={"/checkout"}>
-                                    <button style={{ marginTop: "20px", marginLeft: "20px" }} className='placeorder_button addtocart'>Add to Cart</button>
-                                </Link>
                                 <button style={{ marginTop: "10px", marginLeft: "20px" }} className='placeorder_button buynow'>Buy Now</button>
+                                </Link>
                             </div>
                         </div>
                     </Paper>

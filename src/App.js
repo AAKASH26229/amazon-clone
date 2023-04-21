@@ -12,9 +12,12 @@ function App() {
   return ( 
     <Router>
       <div className="App">
-        <Navbar />
+        
 
         <CartContextProvider >
+
+        <Navbar />
+
         <Routes>  
          
           <Route path="/display" element={<DisplayContent />} />

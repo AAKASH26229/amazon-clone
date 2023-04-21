@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import "./Navbar.css";
+import { CartContext } from '../CartContext';
 
 class Navbar extends Component {
+
+    //adding cartcontext in a class component 
+    static contextType = CartContext;
+
     constructor(props) {
         super(props);
+        this.state = {  }
     }
-    state = {  }
     render() { 
+        let {item,size,incremet} = this.context;
         return ( 
             <div>
             <div className="navbar_component">
@@ -44,7 +50,7 @@ class Navbar extends Component {
                 </div>
                 <div className='navbar_text navbar_cart'>
                     <div src="" className='cart_image' ></div>
-                    <div className='cart_item'>0</div>
+                    <div className='cart_item'>{ size }</div>
                     <div className='navbar_text_cart'>Cart</div>
                 </div>
             </div>

@@ -94,20 +94,24 @@
     background: url('https://ik.imagekit.io/amazon26/amazon-image/sprite.png?updatedAt=1680608527554') no-repeat -20px -680px;
 	width: 76px;
 	height: 52px;
-    margin-left: 3px;
+    margin-left: -18px;
 
 }
 .navbar_text_cart {
-    margin-top: 20px;
+    margin-top: 21px;
     font-weight: bold;
+    font-size: 24px;
+    margin-left: -21px;
 }
 
 .cart_item {
     font-weight: bold;
     position: relative;
-    left: -35px;
-    margin-top: 10px;
+    left: -40px;
+    margin-top: 5px;
     color: #f88805;
+    font-size: 18px;
+
 }
 
 .navbar_footer {
