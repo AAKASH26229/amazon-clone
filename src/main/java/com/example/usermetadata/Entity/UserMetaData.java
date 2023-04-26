@@ -1,14 +1,18 @@
 package com.example.usermetadata.Entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
-@Entity(name="User")
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="User")
 public class UserMetaData {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
 	private String name;
@@ -18,7 +22,7 @@ public class UserMetaData {
 	
 	
 	public UserMetaData() {
-		super();
+		super();  
 		// TODO Auto-generated constructor stub
 	}
 
